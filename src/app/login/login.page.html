@@ -1,0 +1,38 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+
+       
+          <ion-card class="welcome-card" *ngFor="let geo of arrayparkgis">
+              <br>
+              <br>
+              
+            
+              <ion-img src={{geo.img}}></ion-img>
+              <br>
+              <br>
+              
+              
+              <ion-card-header>
+                <ion-card-subtitle>  </ion-card-subtitle>
+                <ion-card-title>{{geo.nombre}}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <br>
+                <br>
+               
+              
+                
+                  <ion-button (click)="presentAlert()" expand="block" color="secondary" [routerLink]="['/home']" routerLinkActive="router-link-active">
+                  {{geo.boton}} </ion-button>
+                    
+              </ion-card-content>
+            </ion-card>
+
+
+  
+        
+
+</ion-content>
